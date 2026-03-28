@@ -154,7 +154,7 @@
     },
     "name":"spr_omega_tenn_signals",
     "playback":1,
-    "playbackSpeed":14.0,
+    "playbackSpeed":25.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

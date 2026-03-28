@@ -10,5 +10,16 @@ offset = 0
 
 enum ENC_BG {
     GRID,
+    TENNABATTLE,
     NONE
 }
+
+#region TENNA BATTLE DATA
+tennbgspeed = 0.03
+tennxvalue  = 0
+
+half_screenx = room_width / 2
+half_screeny = room_height / 2
+
+tenna_bg = spr_tenna_bg
+#endregion

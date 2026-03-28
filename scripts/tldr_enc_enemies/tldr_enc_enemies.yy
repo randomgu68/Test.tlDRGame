@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tldr_enc_enemies",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tldr_enc_enemies",
+  "parent":{
+    "name":"encounter",
+    "path":"folders/tlDRGame/Scripts/encounter.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
