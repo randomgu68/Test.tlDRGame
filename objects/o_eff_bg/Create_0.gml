@@ -15,7 +15,7 @@ enum ENC_BG {
 }
 
 #region TENNA BATTLE DATA
-tennbgspeed = 0.03
+tennbgspeed = 0.025
 tennxvalue  = 0
 
 half_screenx = room_width / 2

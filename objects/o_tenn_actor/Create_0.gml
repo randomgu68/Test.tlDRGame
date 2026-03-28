@@ -10,6 +10,8 @@ s_signals = spr_omega_tenn_signals
 image_xscale = 0.6
 image_yscale = 0.6
 
+
+
 s_intro_spd = 0
 s_frozen = undefined
 
