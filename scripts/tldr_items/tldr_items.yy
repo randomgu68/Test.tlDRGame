@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tldr_items",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tldr_items",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/tlDRGame/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
