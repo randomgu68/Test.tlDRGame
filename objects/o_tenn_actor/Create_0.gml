@@ -29,6 +29,7 @@ sinnermovement = 0
 s_intro_spd = 0
 s_frozen = undefined
 
+s_hurt = spr_omega_tenn_idle
 is_enemy = false
 chase_encounter = false
 enemy_struct = {}
