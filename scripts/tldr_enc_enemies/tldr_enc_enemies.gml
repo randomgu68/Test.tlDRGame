@@ -31,6 +31,6 @@ function tldrGame_enemy_omt() : enemy() constructor{
     
 	// text
 	dialogue = function(slot){
-        return cutscene_dialogue("NOELLE!! DO YOU STILL RECOGNIZE ME?")
+        return "noelle do you still remebertusafa"
 	}
 }
