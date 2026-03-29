@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"lb_tennaword_readme",
+  "name":"lb_tennaword_readme",
+  "parent":{
+    "name":"lb_tenna_words",
+    "path":"folders/@Libraries/lb_tenna_words.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

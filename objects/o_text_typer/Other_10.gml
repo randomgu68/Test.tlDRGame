@@ -24,6 +24,20 @@ if __temp_arg != "" {
     array_push(arg, __temp_arg)
 }
 
+if command == "ten_word" { // ten_word(string)
+	var inst = instance_create(o_lb_tenword_text_word, x + xoff, y + yoff, depth)
+    
+    inst.sprite_index = asset_get_index($"spr_lb_tenword_{arg[0]}")
+    inst.gui = gui
+    inst.image_xscale = xscale/2
+    inst.image_yscale = yscale/2
+    
+	array_push(mychars, inst)
+	xoff += sprite_get_width(inst.sprite_index) * xscale/2
+	
+	pause = 5
+}
+
 if command == "s" || command == "sleep" { // sleep(frames)
 	if array_length(arg) > 0
 		pause = real(arg[0])

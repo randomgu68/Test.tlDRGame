@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_lb_tenword_gunshot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.42,
+  "exportDir":"",
+  "name":"snd_lb_tenword_gunshot",
+  "parent":{
+    "name":"sounds",
+    "path":"folders/@Libraries/lb_tenna_words/sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_lb_tenword_gunshot.wav",
+  "volume":1.0,
+}
