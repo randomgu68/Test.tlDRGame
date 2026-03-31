@@ -399,6 +399,7 @@
     {"id":{"name":"o_ow_debug_interactable","path":"objects/o_ow_debug_interactable/o_ow_debug_interactable.yy",},},
     {"id":{"name":"o_ow_depthobj","path":"objects/o_ow_depthobj/o_ow_depthobj.yy",},},
     {"id":{"name":"o_ow_interactable","path":"objects/o_ow_interactable/o_ow_interactable.yy",},},
+    {"id":{"name":"o_ow_npc_test","path":"objects/o_ow_npc_test/o_ow_npc_test.yy",},},
     {"id":{"name":"o_ow_npc","path":"objects/o_ow_npc/o_ow_npc.yy",},},
     {"id":{"name":"o_ow_parallax","path":"objects/o_ow_parallax/o_ow_parallax.yy",},},
     {"id":{"name":"o_ow_prophecy","path":"objects/o_ow_prophecy/o_ow_prophecy.yy",},},
