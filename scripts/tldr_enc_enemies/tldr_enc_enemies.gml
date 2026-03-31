@@ -31,6 +31,11 @@ function tldrGame_enemy_omt() : enemy() constructor{
     
 	// text
 	dialogue = function(slot){
-        return "noelle do you still remebertusafa"
+        cutscene_create()
+        cutscene_set_variable(o_tenn_actor,"cutscene_finished",false)
+        cutscene_set_variable(o_enc,"waiting","true")
+        cutscene_set_variable(o_enc,"waiting","false")
+        cutscene_set_variable(o_tenn_actor,"cutscene_finished",true)
+        cutscene_play()
 	}
 }

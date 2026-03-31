@@ -3,7 +3,7 @@ event_inherited();
 
 sinnermovement += 0.05
 
-if(instance_exists(o_enc) and o_enc.battle_state == BATTLE_STATE.TURN) {
+if(instance_exists(o_enc) and o_enc.battle_state == BATTLE_STATE.TURN and cutscene_finished == true) {
     
     animate(image_alpha, 0, 10, anime_curve.linear,id, "image_alpha", true)
     

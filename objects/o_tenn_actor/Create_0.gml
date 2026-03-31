@@ -4,7 +4,7 @@ event_inherited();
 s_intro = spr_omega_tenn_idle
 
 s_emote = spr_omega_tenn_emote
-
+cutscene_finished = false
 s_signals = spr_omega_tenn_signals
 
 facenumb = 3
