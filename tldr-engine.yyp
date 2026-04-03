@@ -809,6 +809,7 @@
     {"id":{"name":"party_set","path":"scripts/party_set/party_set.yy",},},
     {"id":{"name":"recruits","path":"scripts/recruits/recruits.yy",},},
     {"id":{"name":"saves","path":"scripts/saves/saves.yy",},},
+    {"id":{"name":"scr_debug_things","path":"scripts/scr_debug_things/scr_debug_things.yy",},},
     {"id":{"name":"scr_retro_pal_swapper_utilities","path":"scripts/scr_retro_pal_swapper_utilities/scr_retro_pal_swapper_utilities.yy",},},
     {"id":{"name":"scr_retro_pal_swapper","path":"scripts/scr_retro_pal_swapper/scr_retro_pal_swapper.yy",},},
     {"id":{"name":"shop_options","path":"scripts/shop_options/shop_options.yy",},},

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_debug_things",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_debug_things",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/tlDRGame/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -17,6 +17,7 @@ confined_on_y = true
 
 event_user(0)
 
+
 camera = camera_create_view(x, y,
 	width / scale_x, height / scale_y,
 	angle, target, -1, -1,
