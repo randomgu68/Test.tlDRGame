@@ -12,7 +12,13 @@ if pattern == "smashcutstars" {
     var height = 480
     var halfscale = 0.5
     
-    if(timer >= 60) {
+    if(timer == 15 and animslashstart) {
+        instance_create(o_tldrgame_eff_slash,0,0,-8000)
+        screen_shake(5,15)
+        animslashstart = false
+    }
+    
+    if(timer >= 30) {
         
         sinvalue += sinspeed
         
