@@ -1,22 +1,38 @@
-sinevalue += sinespeed
-
-if pattern == "smashcut" {
-    if (!surface_exists(tennsmashcut))
-        tennsmashcut = surface_create(320, 240);
-    surface_set_target(tennsmashcut);
-    draw_clear(c_black);
-    draw_surface(application_surface, 0, 0);
-    surface_reset_target();
-    var cut = o_enc_box.y - o_camera.y;
-    var cut2 = o_camera.height - cut;
+if pattern == "smashcutstars" {
+    if(instance_exists(o_enc_box)) {
+        o_enc_box.width = 112
+        o_enc_box.height = 112
+    }
     
-    ossafe_fill_rectangle_color(o_camera.x, o_camera.y, o_camera.x + o_camera.width, o_camera.y + o_camera.height, 0, 0, 0, 0);
-    draw_surface_part(tennsmashcut, 0, 0, o_camera.width, cut, o_camera.x  + (sin(sinevalue) * 18 ), o_camera.y);
-    draw_surface_part(tennsmashcut, 0, 0, o_camera.width, cut, (o_camera.x  + (sin(sinevalue) * 18 )) - o_camera.width, o_camera.y);
-    draw_surface_part(tennsmashcut, 0, 0, o_camera.width, cut, o_camera.x  + (sin(sinevalue) * 18 ) + o_camera.width, o_camera.y);
-    draw_surface_part(tennsmashcut, 0, cut, o_camera.width, cut2, o_camera.x  + (cos(sinevalue) * 18 ), o_camera.y + cut);
-    draw_surface_part(tennsmashcut, 0, cut, o_camera.width, cut2, (o_camera.x  + (cos(sinevalue) * 18 )) - o_camera.width, o_camera.y + cut);
-    draw_surface_part(tennsmashcut, 0, cut, o_camera.width, cut2, o_camera.x  + (cos(sinevalue) * 18 ) + o_camera.width, o_camera.y + cut);
+    var room_value_height = 240
+    var cut1 = 85
+    var cut2 = 170
+    
+    var width = 640
+    var height = 480
+    var halfscale = 0.5
+    
+    if(timer >= 60) {
+        
+        sinvalue += sinspeed
+        
+        if (!surface_exists(surfacetemplate)) {
+            surfacetemplate = surface_create(640,480)
+        }
+        
+        surface_set_target(surfacetemplate)
+        draw_clear(c_black)
+        draw_surface(application_surface,0,0)
+        surface_reset_target()
+        ossafe_fill_rectangle_color(0, 0, 0 + 320, 0 + 240, 0, 0, 0, 0);
+        draw_surface_part_ext(surfacetemplate,0,0,width,170,0+sin(sinvalue)*16,0,halfscale,halfscale,c_white,1)
+        draw_surface_part_ext(surfacetemplate,0,0,width,170,0+sin(sinvalue)*16,0,halfscale,halfscale,c_white,1)
+        draw_surface_part_ext(surfacetemplate,0,0,width,170,0+sin(sinvalue)*16,0,halfscale,halfscale,c_white,1)
+        draw_surface_part_ext(surfacetemplate,0,170,width,340,0-cos(sinvalue)*16,85,halfscale,halfscale,c_white,1)
+        draw_surface_part_ext(surfacetemplate,0,170,width,340,0-cos(sinvalue)*16,85,halfscale,halfscale,c_white,1)
+        draw_surface_part_ext(surfacetemplate,0,170,width,340,0-cos(sinvalue)*16,85,halfscale,halfscale,c_white,1)
+    }
+    
 }
 
 draw_self()
