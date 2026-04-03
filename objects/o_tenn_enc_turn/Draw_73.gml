@@ -12,8 +12,21 @@ if pattern == "smashcutstars" {
     var height = 480
     var halfscale = 0.5
     
-    if(timer == 15 and animslashstart) {
+    if(timer == 25 and animslashstart) {
         instance_create(o_tldrgame_eff_slash,0,0,-8000)
+        
+        var star1 =instance_create(o_tldr_enc_all_stars, o_enc_box.x+10,o_enc_box.y)
+        star1.destroy = false
+        star1.direction = 45
+        star1.speed = 5
+        star1.depth = DEPTH_ENCOUNTER.BULLETS_OUTSIDE
+        
+        var star2 =instance_create(o_tldr_enc_all_stars, o_enc_box.x-10,o_enc_box.y)
+        star2.destroy = false
+        star2.direction = 225
+        star2.speed = 5
+        star2.depth = DEPTH_ENCOUNTER.BULLETS_OUTSIDE
+        
         screen_shake(5,15)
         animslashstart = false
     }

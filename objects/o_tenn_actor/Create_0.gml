@@ -3,7 +3,6 @@ event_inherited();
 
 s_intro = spr_omega_tenn_idle
 
-
 s_emote = spr_omega_tenn_emote
 cutscene_finished = false
 s_signals = spr_omega_tenn_signals
@@ -34,3 +33,4 @@ s_hurt = spr_omega_tenn_idle
 is_enemy = false
 chase_encounter = false
 enemy_struct = {}
+alarm_set(0,105)

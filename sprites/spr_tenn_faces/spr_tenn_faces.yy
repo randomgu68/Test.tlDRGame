@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"omtennenemy",
-    "path":"folders/tlDRGame/Sprites/omtennenemy.yy",
+    "name":"tennanim",
+    "path":"folders/tlDRGame/Sprites/omtennenemy/tennanim.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -14,6 +14,7 @@ if(instance_exists(o_enc) and o_enc.battle_state == BATTLE_STATE.TURN and cutsce
         image_alpha = 0
     }
     */
+    
 } else {
     
     animate(image_alpha, 1, 10, anime_curve.linear,id, "image_alpha", true)

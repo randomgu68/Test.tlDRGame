@@ -120,8 +120,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"omtennenemy",
-    "path":"folders/tlDRGame/Sprites/omtennenemy.yy",
+    "name":"bg",
+    "path":"folders/tlDRGame/Sprites/omtennenemy/bg.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

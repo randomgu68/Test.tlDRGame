@@ -7,6 +7,6 @@ if(image_yscale == 1.25) {
 }
 
 if(callthisonce) {
-    animate(1.25,0,8,anime_curve.sine_out,id,"image_yscale")
+    animate(1.25,0,5,anime_curve.sine_out,id,"image_yscale")
     callthisonce = false
 }

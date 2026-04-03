@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"omtennenemy",
-    "path":"folders/tlDRGame/Sprites/omtennenemy.yy",
+    "name":"bullets",
+    "path":"folders/tlDRGame/Sprites/omtennenemy/bullets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

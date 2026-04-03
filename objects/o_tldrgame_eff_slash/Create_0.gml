@@ -11,5 +11,5 @@ visible = true
 x = 160
 y = o_enc_box.y
 
-animate(0.85,1.25,8,anime_curve.sine_out,id,"image_yscale")
+animate(0.85,1.25,5,anime_curve.sine_out,id,"image_yscale")
 
