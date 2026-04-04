@@ -1,7 +1,7 @@
 if pattern == "smashcutstars" {
     if(instance_exists(o_enc_box)) {
-        o_enc_box.width = 112
-        o_enc_box.height = 112
+        o_enc_box.width = 100
+        o_enc_box.height = 100
     }
     
     var room_value_height = 240
@@ -12,20 +12,27 @@ if pattern == "smashcutstars" {
     var height = 480
     var halfscale = 0.5
     
-    if(timer == 25 and animslashstart) {
-        instance_create(o_tldrgame_eff_slash,0,0,-8000)
+    var boxhalfWidth = o_enc_box.width /2
+    var boxhalfHeight = o_enc_box.height /2
+    
+    if(timer == 15) {
         
-        var star1 =instance_create(o_tldr_enc_all_stars, o_enc_box.x+10,o_enc_box.y)
+        var star1 =instance_create(o_tldr_enc_all_stars, o_enc_box.x - boxhalfWidth-20,o_enc_box.y - boxhalfHeight-20)
         star1.destroy = false
-        star1.direction = 45
-        star1.speed = 5
+        star1.direction = 315
+        star1.speed = 6
         star1.depth = DEPTH_ENCOUNTER.BULLETS_OUTSIDE
         
-        var star2 =instance_create(o_tldr_enc_all_stars, o_enc_box.x-10,o_enc_box.y)
+        var star2 =instance_create(o_tldr_enc_all_stars, o_enc_box.x + boxhalfWidth+20,o_enc_box.y - boxhalfHeight-20)
         star2.destroy = false
         star2.direction = 225
-        star2.speed = 5
+        star2.speed = 6
         star2.depth = DEPTH_ENCOUNTER.BULLETS_OUTSIDE
+        
+    }
+    
+    if(timer == 25 and animslashstart) {
+        instance_create(o_tldrgame_eff_slash,0,0,-8000)
         
         screen_shake(5,15)
         animslashstart = false

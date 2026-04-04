@@ -33,4 +33,5 @@ s_hurt = spr_omega_tenn_idle
 is_enemy = false
 chase_encounter = false
 enemy_struct = {}
+
 alarm_set(0,105)

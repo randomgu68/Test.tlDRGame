@@ -1,6 +1,17 @@
 event_inherited()
 
 destroy = false
+
+finish = false
+
+timer = 0
+
+pattern = o_tenn_enc_turn.pattern
+
+timer_end = o_tenn_enc_turn.timer_end
+
+randomvalue = choose(30, 60, 90)
+
 /*
 // left var
 pointinitleftx = -24
@@ -27,6 +38,8 @@ pointfinaldownx = 320
 pointfinaldowny = 160
 */
 
+image_alpha = 0
+
 // line 1
 line1_x1 = 0
 line1_y1 = 0
@@ -50,3 +63,5 @@ line4_x1 = 319
 line4_y1 = 0
 line4_x2 = 319
 line4_y2 = 160
+
+animate(0,1,20,anime_curve.sine_in_out,id,"image_alpha")
