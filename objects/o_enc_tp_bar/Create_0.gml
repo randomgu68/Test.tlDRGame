@@ -1,5 +1,5 @@
-x = 50
-y = 40+98
+x = 640 - 20
+y = 40 + 98
 depth = DEPTH_ENCOUNTER.UI
 
 x_offset = 0

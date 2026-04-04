@@ -1,3 +1,8 @@
+enum ALT_COLORS {
+    alt_blue_color = #0040c0,
+    alt_darker_blue = #000080
+}
+
 function ossafe_fill_rectangle_color(x1, y1, x2, y2, col1, col2, col3, col4, outline = false)
 {
     
