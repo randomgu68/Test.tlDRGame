@@ -1,9 +1,7 @@
 if pattern == "smashcutstars" {
-    if(timer == 1) {
-        if(instance_exists(o_enc_box)) {
-            animate(75,100,10,anime_curve.sine_in_out,o_enc_box,"width")
-            animate(75,100,10,anime_curve.sine_in_out,o_enc_box,"height")
-        }
+    if(instance_exists(o_enc_box)) {
+        o_enc_box.width = 100
+        o_enc_box.height = 100
     }
     
     var room_value_height = 240
