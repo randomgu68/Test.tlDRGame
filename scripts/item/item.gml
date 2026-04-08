@@ -106,7 +106,7 @@ function item_add(item_struct, type = undefined) {
 		if item_get_count(type) + 1 > item_get_maxcount(type) 
 			can = false  
     
-	var txt = loc_string("item_added", item_get_name(item_struct), item_get_store_name(type))
+	var txt = string(loc("item_added"), item_get_name(item_struct), item_get_store_name(type))
 	if can {
 		if type == ITEM_TYPE.STORAGE {
             var index = 0
@@ -606,6 +606,7 @@ function item_localize(_loc) {
     }
     
     var __names = struct_get_names(__data)
+    
     for (var i = 0; i < array_length(__names); i ++) {
         var __value = struct_get(__data, __names[i])
         if is_struct(__value) && is_struct(struct_get(__data, __names[i])) { // loop through the struct and avoid deleting already existing hashes

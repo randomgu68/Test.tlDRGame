@@ -1,6 +1,6 @@
 chapters = [
 	{
-		name: "chapter_1", // will be localized when drawn
+		name: loc("chapter_1"),
 		exec: function(caller) {
 			music_stop(0)
 			audio_play(snd_ui_scary)
@@ -10,17 +10,17 @@ chapters = [
 			call_later(80, time_source_units_frames, function() {
 				global.chapter = 1
                 
-                save_entry_set_default("ROOM", room_ex_dforest)
-                save_entry_set_default("CHAPTER", 1)
-                
-                save_reload()
+                global.save.ROOM = room_ex_dforest
+                global.save.CHAPTER = 1
+				
+				save_reload()
 				room_goto(room_save_select)
 			})
 		},
 		icon: spr_ui_chs_ch1,
 	},
 	{
-		name: "chapter_2",
+		name: loc("chapter_2"),
 		exec: function(caller){
 			music_stop(0)
 			audio_play(snd_chs_ch2)
@@ -29,9 +29,10 @@ chapters = [
 			
 			call_later(80, time_source_units_frames, function() {
 				global.chapter = 2
-                save_entry_set_default("ROOM", room_ex_city)
-                save_entry_set_default("CHAPTER", 2)
                 
+				global.save.ROOM = room_ex_city
+                global.save.CHAPTER = 2
+				
 				save_reload()
 				room_goto(room_save_select)
 			})
@@ -39,7 +40,7 @@ chapters = [
 		icon: spr_ui_chs_ch2,
 	},
 	{
-		name: "chapter_3",
+		name: loc("chapter_3"),
 		exec: function(caller){
 			music_stop(0)
 			audio_play(snd_chs_ch3)
@@ -48,9 +49,10 @@ chapters = [
 			
 			call_later(80, time_source_units_frames, function() {
 				global.chapter = 3
-                save_entry_set_default("ROOM", room_test_main)
-                save_entry_set_default("CHAPTER", 3)
                 
+				global.save.ROOM = room_test_main
+                global.save.CHAPTER = 3
+				
 				save_reload()
 				room_goto(room_save_select)
 			})
@@ -58,7 +60,7 @@ chapters = [
 		icon: spr_ui_chs_ch3,
 	},
 	{
-		name: "chapter_4",
+		name: loc("chapter_4"),
 		exec: function(caller){
 			music_stop(0)
 			audio_play(snd_chs_ch4)
@@ -67,9 +69,10 @@ chapters = [
 			
 			call_later(80, time_source_units_frames, function() {
 				global.chapter = 4
-                save_entry_set_default("ROOM", room_ex_church)
-                save_entry_set_default("CHAPTER", 4)
                 
+				global.save.ROOM = room_ex_church
+                global.save.CHAPTER = 4
+				
 				save_reload()
 				room_goto(room_save_select)
 			})
@@ -93,9 +96,8 @@ pause = 0
 acquired_crystal = false
 
 copyright_text = ""
-gamename = GAME_NAME
-version_text = GAME_VERSION
-restart_upon_language_switch = false // QOL. it restarts the room in deltarune but the engine supports no restarting
+gamename = ENGINE_NAME
+version_text = ENGINE_VERSION
 
 languages = true
 

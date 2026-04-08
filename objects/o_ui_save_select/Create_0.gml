@@ -60,7 +60,7 @@ surf = -1
 copy_from = 0
 copy_to = 0
 
-credit = $"{GAME_NAME} {GAME_VERSION}"
+credit = $"{ENGINE_NAME} {ENGINE_VERSION}"
 
 event_user(0)
 
