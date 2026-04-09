@@ -1,2 +1,2 @@
-if memory_get(state_group, id)
+if state_get(state_group)
 	image_index = 1

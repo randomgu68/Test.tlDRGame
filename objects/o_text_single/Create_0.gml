@@ -17,8 +17,7 @@ shadow = true
 shadowoff = [1,1]
 shadowcol = -1
 
-effect = undefined
-effect_arguments = []
+effect = 0
 blur = 0
 god = 0
 
@@ -72,27 +71,4 @@ _typer_drawsinglechar = function(xx, yy, opacity) {
 				c_white, c_white, xcolor, xcolor, opacity
 			)
 	}
-}
-_init = function() {
-    switch effect {
-        case "shake":
-            if array_length(effect_arguments) < 1
-                effect_arguments[0] = 1;
-            else 
-                effect_arguments[0] = real(effect_arguments[0]);
-            break;
-        case "wave":
-            // amplitude
-            if array_length(effect_arguments) < 1
-                effect_arguments[0] = 1;
-            else 
-                effect_arguments[0] = real(effect_arguments[0]);
-            
-            // frequency
-            if array_length(effect_arguments) < 2
-                effect_arguments[1] = 4;
-            else 
-                effect_arguments[1] = real(effect_arguments[1]);
-            break;
-    }
 }
